@@ -1,5 +1,5 @@
 .row{
-    padding: 20px;
+    padding: 25px;
 }
 div{
     background-color:#1d1222;
@@ -7,24 +7,47 @@ div{
     color: white;
 }
 /*Estilo de la foto de perfil*/
-@media (min-width: 576px){
-    #foto-de-perfil{
-        position:absolute;
-        width: 15%;
-        border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
-        left: 3%;
-        top: 600px;
-    }
-}
 @media (max-width: 575px){
     #foto-de-perfil{
-        position:absolute;
+        position:static;
         width: 35%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 3%;
         top: 630px;
+    }
+}
+
+@media (min-width: 576px){
+    #foto-de-perfil{
+        position:sticky;
+        right: 1000px;
+        top: -200px;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+    }
+}
+
+@media (max-width: 1140px){
+    #foto-de-perfil{
+        position:sticky;
+        right: 1000px;
+        top: -200px;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+    }
+}
+
+@media (min-width: 1141px){
+    #foto-de-perfil{
+        position:sticky;
+        right: 1800px;
+        top: -200px;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
     }
 }
 /*etiqueta nombre*/
